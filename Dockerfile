@@ -1,7 +1,7 @@
 FROM ubuntu
 
 ENV DEBIAN_FRONTEND noninteractive
-RUN apt-get update && apt-get install -y git curl vim wget
+RUN apt-get update && apt-get install -y git curl vim wget mosquitto-clients jq
 
 RUN curl -fSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 \
     && chmod 700 get_helm.sh \
